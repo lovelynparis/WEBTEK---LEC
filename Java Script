@@ -1,0 +1,57 @@
+JavaScript
+-language provides functionality that allows interaction.
+
+Execution Environment
+- Cone Java Script (Ecma Script)
+Language & API
+-Traditional (BOM) API (non-standard)
+
+DOM(API)
+- Node, Document
+
+miscellaneous JavaScript Web API
+-Geolocation, IndexedDB, Local Storage, Push Notification, Service Workers, Web Sockets.
+
+Top to Bottom approach
+-functions are used for invoking.
+-scripts are executed and any top level code is executed.
+-noscript are used for browser who cannot support the script.
+
+Blocking in rendering the pages:
+*<script src = '/path/to/defer.js' defer></script>
+*<script src = '/path/to/async.js' async> </script>
+
+linked script
+- placed at the end to not block HTML pasring and ensure compatability with browsers that do not support that do not support
+the 'defer/async' attributes.
+
+BOM(Browser Object Model)
+-window, navigator, Screen, Location, History
+
+Document consists of a three of nodes.
+
+DOM
+-API allows access to HTML document from with scripts associated with the page.
+
+Functional: ties
+  retrieve nodes
+    *getElementById()
+    *getElementByTagName()
+    *getElementByclassName()
+    *getElementByName()
+    *querySelector(), querySelectorAll()
+    
+    Traserse the dom tree (from given node)
+    *parentNode, parentElement
+    *childNode, children
+    *firstChild, lasChild, nextChild, previousSibling, etc.
+    
+    construct/copy nodes
+    *createElement()
+    *cloneNode(), importNode()
+    *manipulated the DOM tree
+    -appendChild(), insertBefore(), replaceChild(), removeChild()
+    -adopt
+    
+    *miscellaneous attributes and methods
+    -manipulated attributes
