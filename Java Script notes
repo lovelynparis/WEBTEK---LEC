@@ -1,0 +1,24 @@
+JavaScript
+-developed by circa 1995 by Brendan Eich at Netscape Communications as the scripting language for the
+Netscape Navigator Browser
+-formerly called Mocha then LiveScript then JavaScript
+-standardized by ECMA International as ECMAScript
+-externally link to HTML(you can place it anywhere)
+- Linked/Embedded in web pages using the &lt;script&gt; element
+ Linked:
+
+&lt;script type=”text/javascript” src=”scripts.js” /&gt; &lt;/script&gt;
+ Embedded (either in the &lt;head&gt; or the &lt;body&gt; element)
+
+&lt;script type=”text/javascript”&gt;
+&lt;!—hidescript from non-JavaScript browsers…
+/* script code goes here */
+//end of scripting hiding … -- &gt;
+&lt;/script&gt;
+&lt;noscript&gt;
+…content to show when scripting not available
+&lt;/noscript&gt;
+
+Defer- execute it at the end
+Async-asynchronous
+Window-global object
