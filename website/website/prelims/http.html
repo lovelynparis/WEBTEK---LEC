@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hypertext Tranfer Protocol</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="prelimwebtek.css">
+</head>
+<body>
+    <article>
+    <p id="title">Hypertext Tranfer Protocol</p>
+    <p class="content">Hypertext Tranfer Protocol or HTTP was one of the most widely used protocol 
+    in the world, it is used in the application layer that allows the communication and exchange 
+    of data and acts as the mediator between web browsers and servers.</p>
+
+    <p class="content">HyperText Transfer Protocol (HTTP) was unsecure which was based on client-server 
+    architecture.It is TCP/IP based with a default port, TCP 80.</p>
+    
+
+        <p class="sectiontitle">Version History:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>HTTP/0.9 (1991)</p></dt>
+                <dd><p>The first version of HTTP, used in transferring raw data across the web.</p></dd>
+                <dt><p>HTTP/1.0 (Request For Comments (RFC) 1945, May 1996)</p></dt>
+                <dd><p>Improvement of HTTP/0.9 by allowing messages containing metainformation about the data 
+                being transferred in the MIME (Multipurpose Internet Mail Extensions) format.</p></dd>
+                <dd><p>https://tools.ietf.org/html/rfc1945</p></dd>
+                <dt><p>HTTP/1.1 (RFC 2068, Jan 1997) (RFC 2616, Jun 1999) (RFC 7230-7235, Jun 2014)</p></dt>
+                <dd><p>The first version of HTTP, used in transferring raw data across the web.</p></dd>
+                <dt><p>HTTP/2.0 (RFC 7540, May 2015)</p></dt>
+            </dl>
+        </article>
+    
+        <p class="sectiontitle">Terminologies used:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>Client, aka User Agents (UA)</p></dt>
+                <dd><p>Web Browser, Web Crawlers/Spiders, Other End USer Tools and Applications</p></dd>
+                <dt><p>Server</p></dt>
+                <dd><p>Origin Server, Proxy Server (ex. Authentication Server), Gateways, Tunnels</p></dd>
+
+                <dt><p>Connection</p></dt>
+                <dd><p>Established for the purpose of communication between application programs</p></dd>
+                <dt><p>Message</p></dt>
+                <dd><p>Basic unit of HTTP communication, it is composed of textual information encoded in ASCII.</p></dd>
+                <dd><p>The web browser, server or proxy is usually the ones creating the messages using config 
+                files, APIs, and other interfaces.</p></dd>
+                <dt><p>Request</p></dt>
+                <dd><p>A message sent by the client to the server. This contains the first line of the message 
+                indicating the method to be applied, the resource, identifier and protocol version to be used.</p></dd>
+            </dl>
+        </article>
+        
+        <p class="sectiontitle">HTTP Resource Addressing:</p>
+        <article class="listedsection">
+            <dl>
+                <p>Identifies using Uniform Resource Identifer (URI; RFC 3986) or more specifically, HTTP URIs.</p>
+                <dt><p>2 Subtypes of URI:</p></dt>
+                <dd><p>Uniform Resource Name (URN) - ex. International Standard Book Number (ISBN), Universal Product Code (UPC)</p></dd>
+                <dd><p>Uniform Resource Locator (URL) - ex. google.com</p></dd>
+                <dt><p>Authority</p></dt>
+                <dd><p>User information/authentication credentials (deprecated).</p></dd>
+                <dd><p>Host - domain name (resolved to an ip address using dns) of the server where the resource resides (or will be created).</p></dd>
+                <dd><p>Port Number</p></dd>
+                <dd><p>Path to Resource (resolved relative to the document root on the server)</p></dd>
+                <dd><p>Fragment Identifier - starts with a hashtag (#).</p></dd>
+            </dl>
+        </article>
+        
+        <p class="sectiontitle">Protocol:</p>
+        <article class="listedsection">
+            <dl>
+                <p>A set of rules that needs to be followed when messages are communicated in the Internet.</p>
+                <dt><p>Examples:</p></dt>
+                <dd><p>HTTP(Hypertext Transfer Protcol) - a protocol used for tranferring messages over the Internet.</p></dd>
+                <dd><p>HTTPs - a protcol with a combination of HTTP and SSL or Secure Sockets Layer which makes the sharing of information more secure.</p></dd>
+            </dl>
+        </article>
+
+        <p class="sectiontitle">HTTP Response Message:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>Status Line</p></dt>
+                <dd><p>The first line of the response message. It start with the protocol version and the numeric status code with the description.</p></dd>
+                <dt><p>Response Headers</p></dt>
+                <dd><p>This allows the server to pass additional messages that cannot be placed in the Status Line.</p></dd>
+                <dt><p>Message Body</p></dt>
+                <dd><p>The message body is used to carry the entity-body associated with the request or response. It only differs from the entity-body when
+                        transfer coding has been applied.</p></dd>
+            </dl>
+        </article>
+
+        <p class="sectiontitle">HTTP Request Methods:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>GET</p></dt>
+                <dd><p>Request data from a specified source.</p></dd>
+                <dt><p>HEAD</p></dt>
+                <dd><p>Same as GET but returns only HTTP headers and no document body.</p></dd>
+                <dt><p>POST</p></dt>
+                <dd><p>Submit data to be processed to a specified resources.</p></dd>
+                <dt><p>OPTIONS</p></dt>
+                <dd><p>Represents a request for information about the communication options available
+                on the request/response chain identified by the Request-URI.</p></dd>
+                <dt><p>TRACE</p></dt>
+                <dd><p>Used to invoke a remote, application-layer loop- back of the request message.</p></dd>
+                <dt><p>PUT</p></dt>
+                <dd><p>Uploads a representation of the specified URI.</p></dd>
+                <dt><p>DELETE</p></dt>
+                <dd><p>Deletes the specified resource.</p></dd>
+                <dt><p>CONNECT</p></dt>
+                <dd><p>Converts the request connection to a transparent TCP/IP tunnel.</p></dd>
+
+                <dt><p>Safe Methods:</p></dt>
+                <dd><p>GET, HEAD, OPTIONS, TRACE</p></dd>
+                <dt><p>Not Safe Methods:</p></dt>
+                <dd><p>POST, PUT, DELETE</p></dd>
+                <dt><p>Idempotent:</p></dt>
+                <dd><p>GET, HEAD, PUT, DELETE, OPTIONS, TRACE</p></dd>
+                <dt><p></p></dt>
+                <dd><p></p></dd>
+            </dl>
+        </article>
+       
+        <p class="sectiontitle">HTTP Message Headers:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>General Header Fields:</p></dt>
+                <p>This header fields have general applicability for both request and response messages.</p>
+                <dd><p>Connection</p></dd>
+                <dd><p>Data</p></dd>
+                <dd><p>Pragma</p></dd>
+                <dd><p>Transfer encoding</p></dd>
+                <dd><p>Trailer</p></dd>
+                <dd><p>Upgrade</p></dd>
+                <dd><p>Via</p></dd>
+                <dd><p>Warning</p></dd>
+
+                <dt><p>Request Header Fields:</p></dt>
+                <p>The request-header fields allow the client to pass additional information about 
+                the request, and about the client itself, to the server. These fields act as request modifiers.</p>
+                <dd><p>Accept language</p></dd>
+                <dd><p>Accept encoding</p></dd>
+                <dd><p>Authorization</p></dd>
+                <dd><p>Proxy</p></dd>
+                <dd><p>Expect</p></dd>
+                <dd><p>From</p></dd>
+                <dd><p>Host</p></dd>
+                
+                <dt><p>Response Header Fields:</p></dt>
+                <p>The response-header fields allow the server to pass additional information about the response 
+                which cannot be placed in the Status- Line. These header fields give information about the server 
+                and about further access to the resource identified by the Request-URI.</p>
+                <dd><p>Accept-range</p></dd>
+                <dd><p>Age</p></dd>
+                <dd><p>ETag</p></dd>
+                <dd><p>Location</p></dd>
+                <dd><p>Proxy-authenticate</p></dd>
+                <dd><p>WWW-authenticate</p></dd>
+                <dd><p>Retry-after</p></dd>
+                <dd><p>Server</p></dd>
+                <dd><p>Vary</p></dd>
+                
+                <dt><p>Entity Header Fields:</p></dt>
+                <p>This header fields define meta information about the entity-body or, if no body 
+                is present,about the resource identified by the request.</p>
+                <dd><p>Allow</p></dd>
+                <dd><p>Content - encoding</p></dd>
+                <dd><p>Content - language</p></dd>
+                <dd><p>Content - length</p></dd>
+                <dd><p>Content - location</p></dd>
+                <dd><p>Content - MDS</p></dd>
+                <dd><p>Content - range</p></dd>
+                <dd><p>Content - type</p></dd>
+                <dd><p>Expires</p></dd>
+                <dd><p>Last - modified</p></dd>
+
+                <dt><p>Conditional Header:</p></dt>
+                <dd><p>Request - if-non-match</p></dd>
+                <dd><p>Condition - if-modified.since</p></dd>
+                <dd><p>If - ranges</p></dd>
+                <dd><p>Max - forward</p></dd>
+                <dd><p>Trailer encoding</p></dd>
+                <dd><p>User - agent</p></dd>
+
+                <dt><p>Extended Headers:</p></dt>
+                <dd><p>Upgrade</p></dd>
+                <dd><p>Do not track (DNT)</p></dd>
+            </dl>
+        </article>
+
+        <p class="sectiontitle">HTTP Status Codes:</p>
+        <article class="listedsection">
+            <dl>
+                <dt><p>Informational(1xx)</p></dt>
+                <dd><p>100 Continue</p></dd>
+                <dd><p>101 Switching Protocols</p></dd>
+                <dt><p>Success(2xx)</p></dt>
+                <dd><p>200 OK</p></dd>
+                <dd><p>202 Accepted</p></dd>
+                <dd><p>203 Non-Authoritative Information</p></dd>
+                <dd><p>204 No Content</p></dd>
+                <dd><p>205 Reset Content</p></dd>
+                <dd><p>206 Partial Content</p></dd>
+                <dt><p>Redirection(3xx)</p></dt>
+                <dd><p>300 Multiple Choices</p></dd>
+                <dd><p>301 Moved Permanently</p></dd>
+                <dd><p>302 Found</p></dd>
+                <dd><p>303 See Other</p></dd>
+                <dd><p>304 Not Modified</p></dd>
+                <dd><p>305 Use Proxy</p></dd>
+                <dd><p>306 Switch Proxy</p></dd>
+                <dd><p>307 Temporary Redirect</p></dd>
+                <dt><p>Client Error(4xx)</p></dt>
+                <dd><p>400 Bad Request</p></dd>
+                <dd><p>401 Unauthorized</p></dd>
+                <dd><p>402 Payment Required</p></dd>
+                <dd><p>403 Forbidden</p></dd>
+                <dd><p>404 Not Found</p></dd>
+                <dd><p>405 Method not Allowed</p></dd>
+                <dd><p>406 Not Acceptable</p></dd>
+                <dd><p>407 Proxy Authentication Required</p></dd>
+                <dd><p>408 Request Timeout</p></dd>
+                <dd><p>409 Conflict</p></dd>
+                <dd><p>410 Gone</p></dd>
+                <dd><p>411 Length Required</p></dd>
+                <dd><p>412 Precondition Failed</p></dd>
+                <dd><p>413 Request Entity Too Large</p></dd>
+                <dd><p>414 Request-URI Too Long</p></dd>
+                <dd><p>415 Unsupported Media Type</p></dd>
+                <dd><p>416 Request Range Not Satisfiable</p></dd>
+                <dd><p>417 Expectation Failed</p></dd>
+                <dd><p>426 Upgrade Required</p></dd>
+                <dt><p>Server Error(5xx)</p></dt>
+                <dd><p>500 Internal Server Error</p></dd>
+                <dd><p>501 Not Implemented</p></dd>
+                <dd><p>502 Bad Gateway</p></dd>
+                <dd><p>503 Service Unavailable</p></dd>
+                <dd><p>504 Gateway Timeout</p></dd>
+                <dd><p>505 HTTP Version Not Supported</p></dd>
+            </dl>
+        </article>
+    </article>
+    <footer id="footsection">
+
+    </footer>
+</body>
+</html>
