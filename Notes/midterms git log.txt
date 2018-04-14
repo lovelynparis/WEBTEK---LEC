@@ -1,0 +1,85 @@
+commit cbfabe7cbc682ddcc7471f71e8ab2f2aac2feffc (HEAD -> master, origin/master, origin/HEAD)
+Author: lovelynparis <2145338@slu.edu.ph>
+Date:   Mon Apr 9 09:44:31 2018 +0800
+
+    Editted the javascript html file and fixed the linked urls in the midterms html
+
+commit 09d4bf4ad4d803d2f4323e9b3d927e06356b8dcf
+Author: lovelynparis <2145338@slu.edu.ph>
+Date:   Mon Apr 9 06:59:05 2018 +0800
+
+    Arranged the directories of the website folder
+
+commit 9d260e621cd3194332f446f2b036ad48f719e129
+Author: lovelynparis <2145338@slu.edu.ph>
+Date:   Mon Apr 9 03:25:14 2018 +0800
+
+    Added javascript.html file (incomplete)
+
+commit 6bfdbd6c68ae2f9cd0af422ffd4378dc2759579a
+Author: 2158697 <2158697@slu.edu.ph>
+Date:   Sun Apr 8 15:04:06 2018 +0800
+
+    Add files via upload
+
+    CSS HTML File
+
+commit 8c254a3a57936aa02e6e535cff333e80ef899835
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Sat Apr 7 20:10:22 2018 +0800
+
+    some java script notes
+
+commit 0718347ce4ebd2488f5a692b8c8370959f00a26a
+Author: lovelynparis <34287391+lovelynparis@users.noreply.github.com>
+Date:   Fri Apr 6 15:13:10 2018 +0800
+
+    JavaScript notes
+
+commit 9a48b920df8bb26eddb0bc054a3043119a339c31
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Fri Mar 9 14:45:26 2018 +0800
+
+    use of css and solve the problem
+
+commit 29cdda59a18d3c0b7764504f85514a2c34c4a209 (origin/midterm)
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Fri Mar 9 13:17:09 2018 +0800
+
+    Add files via upload
+
+commit 4854a7419c764f7230093b03092a2f65ce8a2668
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Fri Mar 9 12:52:22 2018 +0800
+
+    CSS selectors and introductions
+
+commit ae8523bcdb54f89d41d6c084973b308be74e5475
+Author: trinidadjoshuaIT <36796704+trinidadjoshuaIT@users.noreply.github.com>
+Date:   Mon Feb 26 16:07:45 2018 +0800
+
+    Add files via upload
+
+commit 8a79c7cd3b984065bfee4d95e589560a458e9caf
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Mon Feb 26 12:06:21 2018 +0800
+
+    Add files via upload
+
+commit ff9ac5949a5d4b26a6218fa7b2a82c8c494f3bb6
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Sat Feb 24 05:36:31 2018 +0800
+
+    Add files via upload
+
+commit e81ef632cf3bdfe0e833893b29965919ba4a2c02
+Author: apachemavengit <mastephaniebangiacan@gmail.com>
+Date:   Sat Feb 24 05:21:21 2018 +0800
+
+    Read.me
+
+commit fd8fc987163cd6cebeee37885813dec13226f7d6
+Author: lovelynparis <2145338@slu.edu.ph>
+Date:   Fri Feb 23 14:54:15 2018 +0800
+
+    Added HTTP content that will be used for the website
