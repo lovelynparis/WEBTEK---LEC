@@ -1,0 +1,26 @@
+PRELIMS:
+-Overview of the World Wide Web
+-HTTP
+  -URL
+-HTML
+  -HTML Preprocessors
+
+MIDTERMS
+-CSS
+  - CSS Fundamentals
+  - CSS Preprocessors
+  - CSS Frameworks
+  - CSS Libraries (SAS)
+-Client Side Web Scripting (CSWS)
+  -JavaScript
+  -Document Object Method
+  -JS Preprocessors, Frameworks, Libraries(JQuery)
+  -CSWS Technology(Java Applets)
+  
+FINALS
+-Server Side Web Scripting(SSWS)
+-Java (Servlets, Java Server Pages)
+-PHP (Fundamentals & Frameworks)
+-JavaScript (w/ Node.js)
+-Active Server Pages(ASP)
+-Other SSWS Technologies & Frameworks (CGI, ROR, Django)
