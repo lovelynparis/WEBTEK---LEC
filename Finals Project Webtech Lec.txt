@@ -1,0 +1,78 @@
+Webtech (FINALS) BITCHES!
+--------------------------------------------------------------------------------------------------------------------------
+Final Grade 
+70% - EXAM (coverage: All the topics from Prelims to Finals)
+30% - Course Website
+--------------------------------------------------------------------------------------------------------------------------
+		PROJECT:
+Coverage:- Finals Topics Only
+	 - Server Side Web Scripting Technologies
+	 - Website Applications Technology
+
+- Rich UI/UX features must have at least 
+interactive content, multimedia, animations, 
+embedded app functionality, mobility etc...
+
+- Website UI/UX features must be appropriate
+(i.e , non-gratuitous and comrehensive)
+
+		CRITERIA:
+40% - Technical Implementation
+20% - Course Website Content
+20% - Documentation
+20% - Presentation
+
+*Individual Grades will be based on the peer evaluation.
+--------------------------------------------------------------------------------------------------------------------------
+		PROGRESS REPORT (PR):
+Due Dates: 
+PR1 : Thursday, 	April 26, 2018 	12:00NN
+PR2 : Thursday, 	May   03, 2018	12:00NN
+
+Contents Include:
+- Detailed accounts of the group's progress:
+	- What has been accomplished.
+	- What are yet to be accomplished.
+	- Group member task accomplishments.
+	- With pertinent PROOF OF WORK. (e.g)
+				- logs
+				- screenshots of designs
+				- photographs(selfie of meetings)
+
+Format:
+	- printed on a long bond paper (8" x 13") bond paper
+	- 1" margin all sides
+	- Font size: 12
+	- Font format: Calibri
+	- 1.5 line spacing
+Coverpage Included
+	-Members (in alphabetical order)
+	-w/ Signatures
+Others:
+	-Handed personally
+	-Stapled
+--------------------------------------------------------------------------------------------------------------------------
+		ARCHITECTURAL DESIGN OF THE COURSE WEBSITE
+Due Date (Tentative):
+May 12, Saturday
+
+Format:
+Same as PR Format
+
+Contents Include:
+-Website Feature Set (w/ Annotated Screenshots)
+	-Description of all the features implemented.
+-Technologies Utilized & Implementation Details (w/ Architectural Diagrams)
+	-How it was implemented
+	-Make use of diagrams for easier explanations
+
+--------------------------------------------------------------------------------------------------------------------------
+		PROJECT PRESENTATION
+Scheduled at: Exam Week
+Guidelines:
+	- 10-15 mins Demonstration of Course Website Functionality and Implementation
+	- Details(Inclusive of Q and A, if any)
+
+Bring Your Own Devices
+ALL MEMBERS MUST PARTCIPATE!
+--------------------------------------------------------------------------------------------------------------------------
