@@ -1,0 +1,40 @@
+ASP
+-Access Server Pages
+-a powerful tool for making dynamic and interactive Web pages.
+-An ASP file can contain text, HTML tags and scripts. 
+ Scripts in an ASP file are executed on the server.
+-Used by IIS (Internet Information Services)
+
+ASP.NET
+ - released in 2002
+ - Written in C#
+ - ASP.NET 4.6 Official Latest Version
+ - ASP.NET 5 expected redesign of ASP.NET
+ - But ASP.NET 5 was stopped in favor of ASP.NET Core	
+
+Different development Models:
+*Classic ASP
+	- introduced in 1998
+	- First server side script language of Microsoft
+	- Written in VBScript
+
+*ASP.NET Web Forms
+	- An event driven application model
+	- Not part of the new ASP.NET Core
+
+*ASP.NET MVC
+	- Model View Controller
+	- Merged to a new ASP.NET Core
+
+*ASP.NET Web Pages
+	- an SPA(Single Page Application) application Model
+	- Similar to PHP and Classic ASP
+	- Merged to a new ASP.NET Core
+
+*ASP.NET API
+	- Application Programming Interface
+	- Merged to a new ASP.NET Core
+
+*ASP.NET Core
+	- released in 2016
+	- merges MVC, Web API, Web Pages into one application framework
