@@ -1,16 +1,19 @@
 ASP
--Access Server Pages
+-Active Server Pages
 -a powerful tool for making dynamic and interactive Web pages.
 -An ASP file can contain text, HTML tags and scripts. 
  Scripts in an ASP file are executed on the server.
 -Used by IIS (Internet Information Services)
 
 ASP.NET
+ - A web application framework or web development platform
+ - to make a dynamic websites
  - released in 2002
- - Written in C#
+ - Written in C#, Visual Basic.net, Jscript, or j#
  - ASP.NET 4.6 Official Latest Version
  - ASP.NET 5 expected redesign of ASP.NET
- - But ASP.NET 5 was stopped in favor of ASP.NET Core	
+ - But ASP.NET 5 was stopped in favor of ASP.NET Core
+ - Produces interactive data-driven web applications over the internet	
 
 Different development Models:
 *Classic ASP
@@ -38,3 +41,65 @@ Different development Models:
 *ASP.NET Core
 	- released in 2016
 	- merges MVC, Web API, Web Pages into one application framework
+
+Components of .NET Framework
+* Common Language Runtime or CLS
+* .Net Framework Class Library
+* Common Language Specification
+* Common Type System 
+* Metadata and Assemblies
+* Windows Forms
+* ASP.NET and ASP.NET AJAX
+* ADO.NET
+* Windows Workflow Foundation(WF)
+* Windows Presentation Foundation
+* Windows Communication Foundation(WCF)
+* Windows CardSpace
+* LINQ
+
+ASP.NET Life Cycle
+ - ASP.NET processess pages to produce dynamic output
+ - The application and its pages are instantiated and processed
+ - ASP.NET compiles the pages dynamically
+ - ASP.NET Life Cycle divided into 2 parts:
+	* Application Life Cycle
+	  -Application life cycle has the following stages:
+	    1. User makes a request for accessing application resource, a page. Browser sends this request to the web server.
+  	    2. A unified pipeline receives the first request and the following events take place:
+ 		i. An object of the class ApplicationManager is created.
+		ii. An object of the class HostingEnvironment is created to provide information regarding the resources.
+		iii. Top level items in the application are compiled.
+ 	    3. Response objects are created. The application objects such as HttpContext, HttpRequest and HttpResponse are created and initialized.
+	    4. An instance of the HttpApplication object is created and assigned to the request.
+	    5. The request is processed by the HttpApplication class. Different events are raised by this class for processing the request.
+	* Page Life Cycle
+	  -The page life cycle phases are:
+		/ Initialization
+		/ Instantiation of the controls on the page
+		/ Restoration and maintenance of the state
+		/ Execution of the event handler codes
+		/ Page rendering
+
+	  - Different Stages of ASP.NET Page:
+		* Page Request
+		* Starting of page life cycle
+		* Page initialization
+		* Page load
+		* Validation
+		* Postback event handling
+		* Page rendering
+		* Unload
+	
+	  - Page Life Cycle Events:
+		* PreInit
+		* Init
+		* InitComplete
+		* LoadViewState
+		* LoadPostData
+		* PreLoad
+		* Load
+		* LoadComplete
+		* PreRender
+		* PreRenderComplete
+		* SaveStateComplete
+		* Unload
