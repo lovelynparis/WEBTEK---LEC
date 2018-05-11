@@ -1,4 +1,4 @@
-PURPOSE:
+﻿PURPOSE:
   Theres are a number of java deals with the java languages, applet development, graphics, and GUI development. It also help you to develop competence in writing
   Java Servlets and javaserver pages, it will provide an easy-to-use reference to hundreds of techniques and solutions to commonly encountered problems.
   
@@ -26,6 +26,7 @@ Read the implicit HTTP request data sent by the clients (browsers)
 Process the data and generate the results
 Send the explicit data (i.e., the document) to the clients (browsers)
 Send the implicit HTTP response to the clients (browsers).
+
 Servlets
 * Java Object based on the Servlet API
 *Runs in a server application to answer client requests; technically, servlets are not tied to

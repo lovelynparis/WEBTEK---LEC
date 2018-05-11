@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Webtek Home</title>
+  <!--<link rel="stylesheet" type="text/css" href="webtek.css">-->
+</head>
+
+<body>
+  <div class="container">
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Webtek</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="./links/java servelet.html">Java Servelets</a>
+          </li>
+
+          <li>
+            <a href="ServiceProvider Orders.html">PHP</a>
+          </li>
+
+          <li>
+            <a href="#">Node.js</a>
+          </li>
+
+          <li>
+            <a href="#">ASP</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+          </li>-->
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-log-in"></span> Logged out </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!--End of Navigation Bar-->
+
+    <!--Page Header-->
+    <div class="page-header">
+      <h1>Server Side Web Scripting</h1>
+    </div>
+
+    <!--Content-->
+    <div class="container-fluid">
+
+      <!--Accordion style content-->
+      <div class="container">
+        <div class="panel-group" id="accordion">
+
+          <!--Introduction Tab-->
+          <div class="panel panel-default">
+            <!--Introduction Title-->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><strong>Introduction</strong></a>
+              </h4>
+            </div>
+
+            <!--Introduction Content-->
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <li>
+                  Server-side scripting serves as an interface to limit client access to resources on the web server.
+                </li>
+
+                <li>
+                  Server-Side Scripting concerns itself more on the back-end side of Web development or any occurrences inside the server.
+                  SSWS is used in creating dynamic websites, any scripting or programming that runs on a server is referred
+                  to as server-side scripting.
+                </li>
+
+                <li>
+                  Earliest forms of SSWS was done through
+                  <abbr title="Common Gateway Interface">CGI</abbr> and it was a method of running scripts from programming languages like C+ or Perl on websites.
+                  This was soon followed by multitudes of programming languages and frameworks like
+                  <abbr title="Personal Home Page">PHP</abbr>, Java, .NET, ColdFusion, Node.js and others have given developers more options to use for development
+                  of Dynamic Websites. The inner workings of SSWS between these scripting languages although varied is mostly
+                  similar in process, in server-side scripting if a user wishes to access contents from the server, the SSWS
+                  makes this possible by making a request from the server, the webserver will first process the script before
+                  the page is served to the browser. Processing the script can involve either pulling information from a
+                  database, making simple calculations or choosing content to display on the page, once the script has been
+                  processed the resulting content is then returned to the browser and then it is rendered. Since the scripts
+                  run on the web server the scripts will remain hidden from the end-user providing a layer of security for
+                  both the data and the source code itself.
+                </li>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!--Disadvantages of Using SSWS-->
+          <div class="panel panel-default">
+            <!--Disadvantages Title-->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><strong>Disadvantages of Using SSWS</strong></a>
+              </h4>
+            </div>
+
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ol>Increase of Server load.</ol>
+                <ul>Since most of the processing Is done on the server it places the burden of running the application on the
+                  webserver rather than on the client machine.</ul>
+
+
+                <ol>Displaying of new content
+                  <ul>Processing of data is done through page refreshes to display new content.</ul>
+                </ol>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!--Request Methods in SSWS-->
+          <div class="panel panel-default">
+            <!--Request Methods Title-->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Request Methods in SSWS</a>
+              </h4>
+            </div>
+
+            <!--Request Methods Content-->
+            <div id="collapse3" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul>
+                  <ol>
+                    <li>
+                      <strong>GET</strong>
+                    </li>
+
+                    <ul><li>Query strings are sent on the URL of a GET request</li></ul>
+                    <ul><li>Request can be cached</li></ul>
+                    <ul><li>Is not to be used handling sensitive data</li></ul>
+                    <ul><li>Length restrictions</li></ul>
+                    <ul><li>Should only be used in data retrieval</li></ul>
+
+                    <li>
+                      <strong>POST</strong>
+                    </li>
+
+                  </li>
+
+                  <ul><li>Query strings are sent in the HTTP message body</li></ul>
+                  <ul><li>Never cached</li></ul>
+                  <ul><li>Cannot be bookmarked</li></ul>
+                  <ul><li>No restrictions or data limit</li></ul>
+                  <ul><li>On post back, it should be verified if the request is a post back, followed by taking the user’s data that was sent over, store it in a database and return a validation to the user validating whether the data sent was correct.</li></ul>
+                  <ul><li>Should only be used in data retrieval</li></ul>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="/js/webtek.js"></script>
+  <script src="/css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
