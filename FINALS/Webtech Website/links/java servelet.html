@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="../style.css">
 
-  <title>Webtek Java Servelet</title>
+  <title>Webtek Java Servlet</title>
   <!--<link rel="stylesheet" type="text/css" href="webtek.css">-->
 </head>
 
@@ -30,7 +30,7 @@
           </li>
 
           <li>
-            <a href="./links/java servelet.html">Java Servelets</a>
+            <a href="./links/java Servlet.html">Java Servlets</a>
           </li>
 
           <li>
@@ -43,6 +43,10 @@
 
           <li>
             <a href="../links/asp.html">ASP</a>
+          </li>
+
+          <li>
+            <a href="#">Take the Java Servlet Quiz</a>
           </li>
         </ul>
 
@@ -63,7 +67,7 @@
 
     <!--Page Header-->
     <div class="page-header">
-      <h1>Java Servelets and Web Services</h1>
+      <h1>Java Servlets and Web Services</h1>
     </div>
 
     <!--Content-->
@@ -73,7 +77,7 @@
       <div class="container">
         <div class="panel-group" id="accordion">
 
-          <!--Introduction Tab-->
+          <!--1. Introduction Tab-->
           <div class="panel panel-default">
             <!--Introduction Title-->
             <div class="panel-heading">
@@ -104,19 +108,19 @@
 
           </div>
 
-          <!--What does the Servelets do: -->
+          <!--2. What does the Servlets do: -->
           <div class="panel panel-default">
             <!--Title-->
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                  <strong>What does the Servelets do?</strong>
+                  <strong>What does the Servlets do?</strong>
                 </a>
               </h4>
             </div>
 
             <!--Content-->
-            <div id="collapse2" class="panel-collapse collapse">
+            <div id="collapse2" class="panel-collapse collapse in">
               <div class="panel-body">
                 <ul>
                   <li>Read the explicit data sent by the clients (browsers)</li>
@@ -130,19 +134,19 @@
 
           </div>
 
-          <!--Java Object based on the Servlet API-->
+          <!--3. Java Object based on the Servlet API-->
           <div class="panel panel-default">
             <!--Title-->
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                  <strong>Servelets</strong>
+                  <strong>Servlets</strong>
                 </a>
               </h4>
             </div>
 
             <!--Content-->
-            <div id="collapse3" class="panel-collapse collapse">
+            <div id="collapse3" class="panel-collapse collapse in">
               <div class="panel-body">
 
                 <ul>
@@ -165,12 +169,12 @@
                     </ol>
                   </li>
 
-                  <!--Java Servelets Packages-->
+                  <!--Java Servlets Packages-->
                   <div class="page-header">
-                    <h4>Java Servelets Packages</h4>
+                    <h4>Java Servlets Packages</h4>
                   </div>
 
-                  <!--Java Servelets Contents-->
+                  <!--Java Servlets Contents-->
                   <ol>
                     <li>
                       <samp>javax.servlet</samp>
@@ -206,26 +210,241 @@
             </div>
           </div>
 
-          <!--Servelet Processing-->
+          <!--4. Servlet Processing-->
           <div class="panel panel-default">
             <!--Title-->
             <div class="panel-heading">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                  <strong>Servelets Processing</strong>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                  <strong>Servlet Processing</strong>
                 </a>
               </h4>
             </div>
+
+            <!--Content-->
+            <div id="collapse4" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ol>
+                  <li>
+                    Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container
+                  </li>
+
+                  <br>
+
+                  <li>
+                    Servlet container checks if servlet is already loaded
+                  </li>
+
+                  <br>
+
+                  <li>
+                    If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.
+                  </li>
+
+                  <br>
+
+                  <li>
+                    Servlet container invokes the servlet‟s service method, passing request and response objects as arguments
+                  </li>
+
+                  <br>
+
+                  <li>
+                    Servlet processes the request using the response object to create the response, which is returned by the servlet container
+                    to the web server, which in turn sends the response to the client
+                  </li>
+
+                  <br>
+
+                  <li>
+                    Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before
+                    a servlet is unloaded, the servlet container invokes its destroy method
+                  </li>
+                </ol>
+
+
+              </div>
+
+            </div>
           </div>
 
+          <!--5. Methods-->
+          <div class="panel panel-default">
+            <!--Title-->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                  <strong>Methods</strong>
+                </a>
+              </h4>
+            </div>
 
+            <!--Content-->
+            <div id="collapse5" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ol>
+                  <li>
+                    <samp>init(config)</samp>
+                    <ul>
+                      <li>
+                        Invoked once on the servlet by the servlet container when the servlet is instantiated; can be used by the servlet for one-time
+                        startup initialization
+                      </li>
+                    </ul>
+                  </li>
+
+                  <br>
+
+                  <li>
+                    <samp>service(request, response)</samp>
+                    <ul>
+                      <li>Invoked each time the servlet is called upon to process a request (typically on a separate thread for
+                        each call)</li>
+                      <li>In HttpServlet, the default Service implementation maps the call to a specific
+                        <samp>doSomething()</samp> method (e.g.
+                        <samp>doGet</samp>,
+                        <samp>doPost</samp>) which is typically overridden to affect the servlet's functionality</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <samp>destroy()</samp>
+                    <ul>
+                      <li>Invoked on the servlet by the servlet container when the servlet is to be unloaded (e.g. when the application
+                        is stopped or undeployed); can be used by the servlet for clean-up processing (e.g. resource deallocation)</li>
+                    </ul>
+                  </li>
+
+                </ol>
+
+
+              </div>
+
+            </div>
+          </div>
+
+          <!--6. HTTP Servlet-->
+          <div class="panel panel-default">
+            <!--Title-->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                  <strong>HTTP Servlet</strong>
+                </a>
+              </h4>
+            </div>
+
+            <!--Content-->
+            <div id="collapse6" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ol>
+                  <li>
+                    <strong>
+                      <samp>Servlet Request Processing (HttpServletRequest)</samp>
+                    </strong>
+                  </li>
+
+                  <ul>
+                    <li>Retrieving user-supplied request parameters</li>
+                    <li>Retrieving request header values</li>
+                  </ul>
+
+                  <li>
+                    <strong>
+                      <samp>Servlet Response Processing (HttpServletResponse)</samp>
+                    </strong>
+                  </li>
+
+                  <ul>
+                    <li>Setting response status code</li>
+                    <li>Setting response headers</li>
+                    <li>Obtaining output object for sending the response</li>
+                  </ul>
+
+                  <li>
+                    <strong>
+                      <samp>Servlet Request Dispatching (RequestDispatcher)</samp>
+                    </strong>
+                  </li>
+
+                  <ul>
+                    <li>Obtain a RequestDispatcher to a resource (static or dynamic) from the request object
+                    </li>
+                    <ul>
+                      <li>
+                        <samp>RequestDispatcher rqstDsp;</samp>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <samp>rqstDsp = request.getRequestDispatcher(res);</samp>
+                      </li>
+                    </ul>
+                    <li>Include the dispatcher resource (or its output) in the current response; one or more resources can be
+                      included (e.g. use for banners, footers, etc.)</li>
+                    <ul>
+                      <li>
+                        <samp> rqstDsp.include(request, response);</samp>
+                      </li>
+                    </ul>
+
+                    <li>Forwards the processing of the current request to the dispatcher resource; the servlet processing the
+                      current request must not generate a response ( e.g. use in MVC “controller” servlets)</li>
+                    <ul>
+                      <li>
+                        <samp> rqstDsp.forward(request, response);</samp>
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <li>
+                    <strong>
+                      <samp>Session Tracking(HttpSession)</samp>
+                    </strong>
+                  </li>
+
+                  <ul>
+                    <li>Session tracking support is implemented either cookies or URL-rewriting o Obtaining session object from
+                      the current request</li>
+                    <ul>
+                      <li>
+                        <samp>HttpSession session;</samp>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <samp>session = request.getSession(createNew);</samp>
+                      </li>
+                    </ul>
+
+                    <li>Obtaining session information (HttpSession)</li>
+                    <ul>
+                      <li>
+                        <samp>getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(),getId(), isNew(), setMaxInactiveInterval(int value)</samp>
+                      </li>
+                    </ul>
+
+                    <li>Destroying sessions</li>
+                    <ul>
+                      <li><sample>invalidate()</sample></li>
+                    </ul>
+
+                    <li>URL-rewriting(HttpServletResponse)</li>
+                    <ul><li><samp>encodeURL(String url), encodeRedirectURL(String url)</samp></li></ul>
+                  </ul>
+                </ol>
+              </div>
+            </div>
+
+
+
+          </div>
 
         </div>
 
       </div>
-
     </div>
-  </div>
 
   </div>
 
