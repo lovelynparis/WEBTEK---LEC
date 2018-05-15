@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webtek Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+
+</head>
+<body>
+  <form id='signup' action='signup.php' method='post' accept-charset='UTF-8'>
+  <fieldset >
+  <legend>Sign Up</legend>
+  <input type="hidden" name="submitted" id="submitted" value='1'/>
+
+  <label for='username' >ID Number:</label>
+  <input type="text" name="username" id="username"  maxlength="50" />
+
+  <label for="password" >Password:</label>
+  <input type="password" name="password" id="password" maxlength="50" />
+
+  <label for = "password">Re-Type Password:</label>
+  <input type="password" name="password" id="password" maxlength="50">
+
+  <input type='submit' name='submit' value='Sign Up' />
+  
+
+  </fieldset>
+  </form>
+</body>
+</html>
