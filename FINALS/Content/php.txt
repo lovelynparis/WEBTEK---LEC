@@ -1,0 +1,43 @@
+PHP
+	- A recursive acronym for "PHP: Hypertext Preprocessor
+	- A server side scripting language that is embedded in HTML.
+	- It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.
+	- It is integrated with a number of popular databases, including MySQL, PostgreSQL, Oracle, Sybase, Informix, and Microsoft SQL Server.
+	- supports a large number of major protocols such as POP3, IMAP, and LDAP.
+	- PHP Syntax is C-Like.
+
+Common uses of PHP
+	- performs system functions, from files on a system it can create, open, read, write, and close them.
+	- handle forms, i.e. gather data from files, save data to a file, through email you can send data, return data to the user.
+	- You add, delete, modify elements within your database through PHP.
+	- Access cookies variables and set cookies.
+	- Using PHP, you can restrict users to access some pages of your website.
+
+Characteristics of PHP
+	Five important characteristics make PHP`s practical nature possible
+		- Simplicity
+		- Efficiency
+		- Security
+		- Flexibility
+		- Familiarity
+
+PHP Scripts
+	- Server-side scripting
+	- Command line scripting
+	- Writing desktop applications\
+
+PHP Syntax
+	- Escaping to PHP tags
+		- Canonical PHP tags
+		- Short-open (SGML-style) tags
+		- ASP-style tags
+		- HTML script tags
+	- Commenting PHP Code
+		- Single-line comments
+		- Multi-lines comments
+	- PHP is whitespace insensitive
+	- PHP is case sensitive
+	- Statements are expressions terminated by semicolons
+	- Expressions are combinations of tokens
+	- Braces make blocks
+	- Running PHP Script from Command Prompt
